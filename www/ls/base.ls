@@ -13,12 +13,6 @@ mapControl.on \zoomend (evt) ->
         $map.css \background \#555
     else
         $map.css \background \#fff
-    return
-    zoom = mapControl.getZoom! - 8
-    zoom = 0 if zoom < 0
-    level = Math.round 255 - zoom * 255 / 6
-    color = level.toString 16
-    console.log color
 
 currentMapId = 0
 currentLayer = null
