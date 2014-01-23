@@ -41,7 +41,7 @@ getGrid = (address) ->
         ..on \mouseover (e) ->
             [obec, okrsek, zeman, schwarz] = e.data
             total = zeman + schwarz
-            txt = "<b>#obec</b>, okrsek #okrsek<br />"
+            txt = "<b>#obec</b>, okrsek č. #okrsek<br />"
             if total
                 txt += "Miloš Zeman: #{Math.round zeman / total * 100}% (#zeman hlasů)<br />"
                 txt += "Karel Schwarzenberg: #{Math.round schwarz / total * 100}% (#schwarz hlasů)"
