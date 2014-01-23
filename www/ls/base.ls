@@ -24,7 +24,7 @@ getLayer = (address) ->
             zIndex: 2
 
 mapLayer = L.tileLayer do
-    *   "http://ihned-mapy.s3.amazonaws.com/desaturized/{z}/{x}/{y}.png"
+    *   "http://hnmaps.blob.core.windows.net/tiles-desaturated/{z}/{x}/{y}.png"
     *   zIndex: 3
         opacity: 0.65
         attribution: 'mapová data &copy; přispěvatelé OpenStreetMap, obrazový podkres <a target="_blank" href="http://ihned.cz">IHNED.cz</a>'
