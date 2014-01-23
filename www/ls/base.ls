@@ -5,8 +5,8 @@ mapControl = L.map do
     *   'map'
     *   minZoom: 6,
         maxZoom: 13,
-        zoom: 7,
-        center: [49.7, 15.5]
+        zoom: 8,
+        center: [49.78, 15.5]
 $map = $ \#map
 mapControl.on \zoomend (evt) ->
     if mapControl.getZoom! >= 11
