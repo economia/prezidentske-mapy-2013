@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <title>Mapy volebních výsledků</title>
+        <link rel="stylesheet" type="text/css" href="screen.css" />
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <div class="search">
+          <form action="">
+            <input type="text" placeholder="Dolní Lhota, Zlín">
+            <button>
+              Hledat
+            </button>
+          </form>
+        </div>
+        <script src="script.js"></script>
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-41281738-1']);
+          _gaq.push(['_trackPageview', 'prezidentske-mapy']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    </body>
+</html>
