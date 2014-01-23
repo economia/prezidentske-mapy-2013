@@ -9,59 +9,100 @@
     border-bottom-left-radius 8px
     border-top 0px none
     border-right 0px none
-    padding 0px
-    li
-        float left
-        position relative
-        list-style-type none
-        margin 0px
-        padding 0px 10px
-        width 90px
-        height 50px
-        font-size 0.9em
-        padding-top 110px
-        text-align center
-        color #888
-        .imgs
-            opacity 0.5
-        &.active
-            color #222
+    ul
+        padding 0px
+        li
+            float left
+            position relative
+            list-style-type none
+            margin 0px
+            padding 0px 10px
+            width 90px
+            height 50px
+            font-size 0.9em
+            padding-top 110px
+            text-align center
+            color #888
             .imgs
-                opacity 1
-                img
-                    border-color HNBlue
-                    box-shadow HNBlue 0px 0px 2px
-        &:hover
-            color #222
-            cursor pointer
-            .imgs
-                opacity 1
-                img
-                    border-color HNBlue
-                    box-shadow HNBlue 0px 0px 4px
-        &:active
-            .imgs
-                img
-                    border-color HNBlue
-                    box-shadow HNBlue 0px 0px 16px
-
-
-        img
-            position absolute
-            top 10px
-            left 10px
-            width 88px
-            height 88px
-            border-radius 8px
-            border 1px solid #aaa
-            &.desat
-                opacity 0.6
-            &.graysc
                 opacity 0.5
+            &.active
+                color #222
+                .imgs
+                    opacity 1
+                    img
+                        border-color HNBlue
+                        box-shadow HNBlue 0px 0px 2px
+            &:hover
+                color #222
+                cursor pointer
+                .imgs
+                    opacity 1
+                    img
+                        border-color HNBlue
+                        box-shadow HNBlue 0px 0px 4px
+            &:active
+                .imgs
+                    img
+                        border-color HNBlue
+                        box-shadow HNBlue 0px 0px 16px
 
-        &:first-child
-            padding-left 20px
+
             img
-                left 20px
-        &:last-child
-            padding-right 20px
+                position absolute
+                top 10px
+                left 10px
+                width 88px
+                height 88px
+                border-radius 8px
+                border 1px solid #aaa
+                &.desat
+                    opacity 0.6
+                &.graysc
+                    opacity 0.5
+
+            &:first-child
+                padding-left 20px
+                img
+                    left 20px
+            &:last-child
+                padding-right 20px
+    div.legend
+        float left
+        width 100%
+        height 48px
+        position relative
+        font-size 0.7em
+        line-height 1.2em
+        transition height 0.8s
+        .left
+            position absolute
+            left 20px
+        .right
+            position absolute
+            right 20px
+            text-align right
+        .size
+            margin-top 4px
+
+        .points
+            position absolute
+            left 100px
+            top 6px
+            > div
+                transition all 0.8s
+                position relative
+                float left
+                border-radius 50%
+                margin 0px 2px
+        &.choro
+            height 35px
+            .points
+                > div
+                    width 15px !important
+                    height 15px !important
+                    top 0px !important
+                    border-radius 0px
+                    margin 0px
+            .size
+                display none
+

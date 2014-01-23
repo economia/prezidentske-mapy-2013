@@ -9,28 +9,49 @@
     <body>
         <div id="map">
         </div>
-        <ul class="selector">
-            <li data-count="0" class="active">
-                <div class="imgs">
-                    <img src="http://hnmaps.blob.core.windows.net/tiles-gray/12/2212/1387.png" alt="" class="graysc">
-                    <img src="../data/prezidenti-circ-lin/12/2212/1387.png" alt="">
+        <div class="selector">
+            <ul>
+                <li data-count="0" class="active">
+                    <div class="imgs">
+                        <img src="http://hnmaps.blob.core.windows.net/tiles-gray/12/2212/1387.png" alt="" class="graysc">
+                        <img src="../data/prezidenti-circ-lin/12/2212/1387.png" alt="">
+                    </div>
+                    Populační mapa
+                </li>
+                <li data-count="1">
+                    <div class="imgs">
+                        <img src="../data/prezidenti-chor-lin/12/2212/1387.png" alt="">
+                    </div>
+                    Územní mapa
+                </li>
+                <li data-count="2">
+                    <div class="imgs">
+                        <img src="../data/prezidenti-chor-incr/12/2212/1387.png" alt="">
+                        <img src="http://hnmaps.blob.core.windows.net/tiles-desaturated/12/2212/1387.png" alt="" class="desat">
+                    </div>
+                    Územní mapa s&nbsp;podkladem
+                </li>
+            </ul>
+            <div class="legend">
+                <div class="left">
+                    <div class="name">Zvítězil<br />Miloš Zeman</div>
+                    <div class="size">Malý okrsek</div>
                 </div>
-                Populační mapa
-            </li>
-            <li data-count="1">
-                <div class="imgs">
-                    <img src="../data/prezidenti-chor-lin/12/2212/1387.png" alt="">
+                <div class="points">
+                    <div style="background: #b35806; width: 5px; height:5px; top: 6px"></div>
+                    <div style="background: #f1a340; width: 7px; height:7px; top: 5px"></div>
+                    <div style="background: #fee0b6; width: 9px; height:9px; top: 4px"></div>
+                    <div style="background: #f7f7f7; width: 11px; height:11px; top: 3px"></div>
+                    <div style="background: #d8daeb; width: 13px; height:13px; top: 2px"></div>
+                    <div style="background: #998ec3; width: 15px; height:15px; top: 1px;"></div>
+                    <div style="background: #542788; width: 17px; height:17px;"></div>
                 </div>
-                Územní mapa
-            </li>
-            <li data-count="2">
-                <div class="imgs">
-                    <img src="../data/prezidenti-chor-incr/12/2212/1387.png" alt="">
-                    <img src="http://hnmaps.blob.core.windows.net/tiles-desaturated/12/2212/1387.png" alt="" class="desat">
+                <div class="right">
+                    <div class="name">Zvítězil<br />Karel Schwarzenberg</div>
+                    <div class="size">Velký okrsek</div>
                 </div>
-                Územní mapa s&nbsp;podkladem
-            </li>
-        </ul>
+            </div>
+        </div>
         <div class="search">
           <form action="">
             <input type="text" placeholder="Dolní Lhota, Zlín">

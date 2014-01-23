@@ -107,6 +107,10 @@ $ document .on \click '.selector li' ->
     $e.addClass 'active'
     c = $e.data \count
     c = parseInt c, 10
+    if c > 0
+        $ ".legend" .addClass \choro
+    else
+        $ ".legend" .removeClass \choro
     selectLayer maps[c]
 
 geocoder = null
