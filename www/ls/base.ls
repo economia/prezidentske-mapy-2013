@@ -107,7 +107,6 @@ $ document .on \click '.selector li' ->
     $e.addClass 'active'
     c = $e.data \count
     c = parseInt c, 10
-    console.log c
     selectLayer maps[c]
 
 geocoder = null
