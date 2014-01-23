@@ -100,6 +100,8 @@ maps =
         displayMap: yes
 
 $body = $ \body
+$ document .on \mouseout \#map ->
+    tooltip.hide!
 
 $ document .on \click '.selector li' ->
     $e = $ @
