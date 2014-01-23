@@ -9,26 +9,48 @@
     <body>
         <div id="map">
         </div>
+        <ul class="selector">
+            <li data-count="0">
+                <div class="imgs">
+                    <img src="../data/prezidenti-chor-incr/12/2212/1387.png" alt="">
+                    <img src="http://hnmaps.blob.core.windows.net/tiles-desaturated/12/2212/1387.png" alt="" class="desat">
+                </div>
+                Územní mapa s&nbsp;podkladem
+            </li>
+            <li data-count="1">
+                <div class="imgs">
+                    <img src="../data/prezidenti-chor-lin/12/2212/1387.png" alt="">
+                </div>
+                Územní mapa
+            </li>
+            <li data-count="1" class="active">
+                <div class="imgs">
+                    <img src="http://hnmaps.blob.core.windows.net/tiles-gray/12/2212/1387.png" alt="" class="graysc">
+                    <img src="../data/prezidenti-circ-lin/12/2212/1387.png" alt="">
+                </div>
+                Populační mapa
+            </li>
+        </ul>
         <div class="search">
           <form action="">
             <input type="text" placeholder="Dolní Lhota, Zlín">
             <button>
-              Hledat
+                Hledat
             </button>
           </form>
         </div>
         <script src="script.js"></script>
-        <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-41281738-1']);
-          _gaq.push(['_trackPageview', 'prezidentske-mapy']);
+        <!-- script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-41281738-1']);
+            _gaq.push(['_trackPageview', 'prezidentske-mapy']);
 
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        </script>
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script -->
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
     </body>
 </html>

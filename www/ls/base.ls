@@ -101,37 +101,6 @@ maps =
 
 $body = $ \body
 
-$gradientContainer = $ "<div></div>"
-    ..addClass \gradientContainer
-    ..appendTo $body
-$partySelectorContainer = $ "<div></div>"
-    ..addClass \partySelectorContainer
-    ..appendTo $body
-$partySelector = $ "<select>"
-    ..appendTo $partySelectorContainer
-    ..on \change ->
-        selectParty @value
-
-for props, id in maps
-    $ "<option value='#id'>#{props.name}</option>"
-        ..appendTo $partySelector
-$partySelector.chosen!
-
-drawLegend = ->
-    $gradientContainer
-        ..empty!
-        ..attr \class "gradientContainer"
-
-    {values, colors} = legend
-    for color, index in colors
-        value = values[index]
-        ele = $ "<div></div>"
-            ..css \background color
-            ..html "#{value}"
-            ..appendTo $gradientContainer
-
-        if index >= 5
-            ele.addClass \dark
 
 geocoder = null
 geocodeMarker = null
@@ -161,4 +130,4 @@ $ '.search form' .on \submit (evt) ->
     if err
         alert "Bohužel danou adresu se nám nepodařilo nalézt."
 selectParty currentMapId
-drawLegend!
+
