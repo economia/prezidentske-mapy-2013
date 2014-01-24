@@ -6,7 +6,7 @@ ve spolupráci s oddělením vývoje redakčních technologií [IHNED.cz](http:/
 ## Mapa prezidenstkých voleb 2013
 ### S přesností na volební okrsky
 
-http://data.blog.ihned.cz/
+http://data.blog.ihned.cz/c1-61606140-volba-prezidenta-rok-pote-kdo-vyhral-ve-vasi-ulici
 
 ### Instalace:
 
