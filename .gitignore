@@ -3,10 +3,6 @@
 .RData
 .DS_Store
 /node_modules
-/data
-/data/*
-/data/*
-/data/*/*
 /data/*/*/*
 /data/*/*/*/*
 /lib
