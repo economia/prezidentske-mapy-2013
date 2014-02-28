@@ -24,13 +24,13 @@ getLayer = (address) ->
             zIndex: 2
 
 mapLayer = L.tileLayer do
-    *   "http://hnmaps.blob.core.windows.net/tiles-desaturated/{z}/{x}/{y}.png"
+    *   "http://staticmaps.ihned.cz/tiles-desaturated/{z}/{x}/{y}.png"
     *   zIndex: 3
         opacity: 0.65
         attribution: 'mapová data &copy; přispěvatelé OpenStreetMap, obrazový podkres <a target="_blank" href="http://ihned.cz">IHNED.cz</a>'
 
 mapUnderLayer = L.tileLayer do
-    *   "http://hnmaps.blob.core.windows.net/tiles-gray/{z}/{x}/{y}.png"
+    *   "http://staticmaps.ihned.cz/tiles-gray/{z}/{x}/{y}.png"
     *   zIndex: 1
         opacity: 0.3
         attribution: 'mapová data &copy; přispěvatelé OpenStreetMap, obrazový podkres <a target="_blank" href="http://ihned.cz">IHNED.cz</a>'
